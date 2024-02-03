@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-image: url("Hackviolet_Background1.jpg");
+  background-size: contain;
+  padding: 5px;
+  width: 70%;
+  height: 600px;
+}
+
+.grid-profile {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: rgba(10, 32, 247, 0.8);
+  padding: 5px;
+
+  width: 2000px;
+  height: 100px;
+}
+
+.pgrid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgba(10, 32, 247, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item {
+  border: 5px solid rgba(10, 32, 247, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.Counter {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+
+#seedMenu {
+  display: flex;
+  justify-content: center;
+  background-color: #2e62ff;
+  width: 30%;
+  height: 600px;
+  /*margin-top: 20px; */
+  padding: 5px;
+  flex-direction: column;
+}
+
+#sectionTitle {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  margin-bottom: -25px;
+}
