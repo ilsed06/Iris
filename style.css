@@ -5,7 +5,7 @@ html, body {
 
 .grid-container {
   display: grid;
-  border: 0px solid rgba(10, 32, 247, 0.8);
+  border: 0px solid;
   grid-template-columns: auto auto auto auto auto;
   background-image: url("Hackviolet_Background1.jpg");
   background-size: contain;
@@ -21,16 +21,34 @@ html, body {
   width: 100%;
 }
 
+.seed-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 5px solid #80471c;
+  height: 90%;
+  width: 95%;
+  gap: 10px;
+  margin-right: 5px;
+}
+
+.seed-item {
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+
 .pgrid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 5px solid rgba(10, 32, 247, 0.8);
+  background-color: #9a7b4f;
+  border: 5px solid #80471c;
   padding: 20px;
   font-size: 30px;
   text-align: center;
 }
 
 .grid-item {
-  border-top: 10px solid rgba(10, 32, 247, 0.8);
+  border-top: 10px solid #9a7b4f;
+  border-bottom: 10px solid #9a7b4f;
   font-size: 30px;
   text-align: center;
 }
@@ -53,21 +71,44 @@ html, body {
   display: flex;
   justify-content: center;
   height: 20%;
-  bottom: 0;
 }
 
 #seedMenu {
   display: flex;
-  justify-content: center;
-  background-color: #2e62ff;
+  justify-content: top;
+  background-color: #80471c;
   width: 30%;
   padding: 5px;
   flex-direction: column;
 }
 
 #sectionTitle {
-  text-align: center;
+  text-align: left;
   color: white;
-  font-family: sans-serif;
-  margin-bottom: -25px;
+  font-family: Lucida Console;
+  /* margin-bottom: -25px; */
+}
+
+#name{
+  text-align: left;
+  color: white;
+  font-family: Lucida Console;
+  display: flex;
+  justify-content: center;
+}
+
+#level{
+  text-align: left;
+  color: white;
+  font-family: Lucida Console;
+  display: flex;
+  justify-content: center;
+}
+
+#hint{
+  text-align: left;
+  color: white;
+  font-family: Lucida Console;
+  display: flex;
+  justify-content: center;
 }
