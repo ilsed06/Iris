@@ -1,26 +1,24 @@
-html {
+html, body {
   height: 100%;
   width: 100%;
 }
 
 .grid-container {
   display: grid;
+  border: 0px solid rgba(10, 32, 247, 0.8);
   grid-template-columns: auto auto auto auto auto;
   background-image: url("Hackviolet_Background1.jpg");
   background-size: contain;
-  padding: 5px;
   width: 70%;
-  height: 600px;
+  height: 100%;
 }
 
 .grid-profile {
   display: grid;
   grid-template-columns: auto auto auto auto;
   background-color: rgba(10, 32, 247, 0.8);
-  padding: 5px;
-
-  width: 2000px;
-  height: 100px;
+  height: 100%;
+  width: 100%;
 }
 
 .pgrid-item {
@@ -32,8 +30,7 @@ html {
 }
 
 .grid-item {
-  border: 5px solid rgba(10, 32, 247, 0.8);
-  padding: 20px;
+  border-top: 10px solid rgba(10, 32, 247, 0.8);
   font-size: 30px;
   text-align: center;
 }
@@ -41,6 +38,8 @@ html {
 .content {
   display: flex;
   justify-content: center;
+  height: 80%;
+  width: 100%;
 }
 
 .Counter {
@@ -53,6 +52,7 @@ html {
 .profile {
   display: flex;
   justify-content: center;
+  height: 20%;
   bottom: 0;
 }
 
@@ -61,8 +61,6 @@ html {
   justify-content: center;
   background-color: #2e62ff;
   width: 30%;
-  height: 600px;
-  /*margin-top: 20px; */
   padding: 5px;
   flex-direction: column;
 }
