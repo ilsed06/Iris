@@ -1,13 +1,14 @@
 html, body {
   height: 100%;
   width: 100%;
+  background-color:  #80471c;
 }
 
 .grid-container {
   display: grid;
   border: 0px solid;
   grid-template-columns: auto auto auto auto auto;
-  background-image: url("Hackviolet_Background1.jpg");
+  background-image: url("Hackviolet_Background2.jpg");
   background-size: contain;
   width: 70%;
   height: 100%;
@@ -16,7 +17,8 @@ html, body {
 .grid-profile {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  background-color: rgba(10, 32, 247, 0.8);
+  background-image: url("HackVioletWood.jpg");
+  background-size: 200px, 40px;
   height: 100%;
   width: 100%;
 }
@@ -24,7 +26,8 @@ html, body {
 .seed-container{
   display: grid;
   grid-template-columns: auto auto auto;
-  border: 5px solid #80471c;
+  background-image: url("HackVioletWood.jpg");
+  background-size: 200px, 40px;
   height: 90%;
   width: 95%;
   gap: 10px;
@@ -41,15 +44,17 @@ html, body {
 .pgrid-item {
   background-color: #9a7b4f;
   border: 5px solid #80471c;
+  border-radius: 10px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
 }
 
 .grid-item {
-  border-top: 10px solid #9a7b4f;
-  border-bottom: 10px solid #9a7b4f;
-  font-size: 30px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-image: url("HackVioletWood.jpg") 100 round;
+  border-image: 10px, 10px;
   text-align: center;
 }
 
@@ -73,10 +78,20 @@ html, body {
   height: 20%;
 }
 
+#pots {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  bottom:0;
+  text-align: center;
+}
+
 #seedMenu {
   display: flex;
   justify-content: top;
-  background-color: #80471c;
+  background-image: url("HackVioletWood.jpg");
+  background-size: 200px, 40px;
   width: 30%;
   padding: 5px;
   flex-direction: column;
@@ -111,4 +126,44 @@ html, body {
   font-family: Lucida Console;
   display: flex;
   justify-content: center;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  background-image: url("https://img.itch.zone/aW1hZ2UvNDc4NTkvMjExMjY5LmdpZg==/original/iEdCFj.gif");
+ background-size: 350px;
+  background-position-y: 25px;
+  width: 300px;
+  height: 200px;/* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

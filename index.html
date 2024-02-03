@@ -10,7 +10,15 @@
 </head>
 
 <body>
+  <script src="data.js"></script>
   <script src="script.js"></script>
+
+  <div id="theModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+    </div>
+  </div>
 
   <section class="content">
 
@@ -18,7 +26,9 @@
       <h4 id="sectionTitle">Seeds</h4>
       <div class="seed-container">
         <!--Empty Slots for Future Developement  -->
-        <div class="seed-item"> </div>
+        <div class="seed-item">
+          
+        </div>
         <div class="seed-item"> </div>
         <div class="seed-item"> </div>
         <div class="seed-item"> </div>
@@ -38,7 +48,9 @@
 
     <div class="grid-container">
       <!--Empty Slots for Future Developement  -->
-      <div class="grid-item" onclick="codePlant()"> </div>
+      <div class="grid-item" onclick="plantClicked()">
+        <img src = "HackVioletUglyPot.jpg" id="pots"></img>
+      </div>
       <div class="grid-item"> </div>
       <div class="grid-item" onclick="healthPlant()"> </div>
       <div class="grid-item"> </div>
@@ -68,7 +80,7 @@
         <p id="name">Add Name</p>
       </div>
       <div class="pgrid-item"> 
-        <p id="level">Level: </p>
+        <p id="level">Level: 0</p>
       </div>
       <div class="pgrid-item"> 
         <p id="hint">Hint</p>
