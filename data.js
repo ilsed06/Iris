@@ -93,18 +93,22 @@ const data =
         "questions":[
            {
              //https://sustainability.georgetown.edu/50-facts-for-50-years/
-              "question":"The United States is the 1st _ producing country in the world",
-              "answer":"trash"
+              "question":"The United States is the number one _ producing country in the world",
+              "answer":"trash",
+             "info": "to be added"
            },
            {
              //https://sustainability.georgetown.edu/50-facts-for-50-years/
               "question":"Recycling one aluminmum can save enough enegery to run a TV for _ hours?",
               "answer":"3",
+              "info": "to be added"
              
-                  //https://climate.nasa.gov/evidence/#:~:text=Global%20Temperature%20Is%20Rising,atmosphere%20and%20other%20human%20activities.
+           },
+          {
+            //https://climate.nasa.gov/evidence/#:~:text=Global%20Temperature%20Is%20Rising,atmosphere%20and%20other%20human%20activities.
              "question":"The planet's average temperature has gone up at least _ degrees in the last few years!",
-             "answer":"2"
-             
+             "answer":"2",
+             "info": "to be added"
            },
            {
              //https://www.sustainability.gov/#:~:text=The%20Office%20of%20the%20Federal,and%20climate%20resilient%20Federal%20operations.
