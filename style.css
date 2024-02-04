@@ -1,3 +1,4 @@
+/* general formatting */
 html, body {
   height: 100%;
   width: 100%;
@@ -5,6 +6,7 @@ html, body {
   font-family: "Nature Beauty";
 }
 
+/* grid containing the plant pots */
 .grid-container {
   display: grid;
   border: 0px solid;
@@ -16,6 +18,7 @@ html, body {
   height: 100%;
 }
 
+/* layout of buttons at the bottom of the screen */
 .grid-profile {
   display: grid;
   grid-template-columns: 15% 30% 30% 25%;
@@ -26,8 +29,9 @@ html, body {
   width: 100%;
 }
 
+/* grid for the seed menu */
 #seed-container{
-  display: grid;
+  display: none;
   grid-template-columns: auto auto auto;
   height: 90%;
   width: 95%;
@@ -35,6 +39,7 @@ html, body {
   margin-right: 5px;
 }
 
+/* formatting for the seeds */
 .seed-item {
   padding: 10px;
   border-radius: 25px;
@@ -44,6 +49,7 @@ html, body {
   height: 100%;
 }
 
+/* the area containing the seed menu */
 .pgrid-item {
   border: 5px solid #80471c;
   border-radius: 10px;
@@ -52,6 +58,7 @@ html, body {
   text-align: center;
 }
 
+/* outline for the plant pots - created shelves */
 .grid-item {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -61,6 +68,7 @@ html, body {
   
 }
 
+/*  */
 .content {
   display: flex;
   justify-content: center;
@@ -68,12 +76,14 @@ html, body {
   width: 100%;
 }
 
+/*  */
 .profile {
   display: flex;
   justify-content: center;
   height: 20%;
 }
 
+/* formatting for the pots */
 .pots {
   display: flex;
   width: 80%;
@@ -82,6 +92,7 @@ html, body {
   align-content: bottom;
 }
 
+/* logo formatting */
 #logo {
   display: flex;
   height: 130%;
@@ -89,9 +100,11 @@ html, body {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  
+  animation: bounceIn;
+  animation-duration: 2s; 
 }
 
+/* seed menu formatting */
 #seedMenu {
   display: flex;
   justify-content: top;
@@ -103,12 +116,14 @@ html, body {
   border: 15px solid #80471c;
 }
 
+/* formatting for the "Seeds" title */
 #sectionTitle {
   text-align: center;
   color: #80471c;
   font-size: 36px;
 }
 
+/* formatting for the users name */
 #name{
   text-align: left;
   color: white;
@@ -117,6 +132,7 @@ html, body {
   justify-content: center;
 }
 
+/* formatting for the levels */
 #level{
   text-align: left;
   color: white;
@@ -125,6 +141,7 @@ html, body {
   justify-content: center;
 }
 
+/* formatting for fail */
 #fail{
   text-align: left;
   color: white;
@@ -133,10 +150,11 @@ html, body {
   justify-content: center;
 }
 
+/* formatting for lives */
 #heart{
   display: flex;
   height: 100%;
-  width: 80%;
+  width: 60%;
   text-align: right;
   margin-left: auto;
   margin-right: auto;
@@ -144,12 +162,18 @@ html, body {
   
 }
 
+/* formatting for each of the plant and seed types */
 #codePlant{
   display: none;
 }
 
 #codeSeed{
   opacity: .4;
+}
+
+#codeSeed:hover {
+  animation: bounceIn;
+  animation-duration: 2s; 
 }
 
 #healthPlant{
@@ -160,6 +184,11 @@ html, body {
   opacity: .4;
 }
 
+#healthSeed:hover {
+  animation: bounceIn;
+  animation-duration: 2s; 
+}
+
 #financePlant{
   display: none;
 }
@@ -168,12 +197,22 @@ html, body {
   opacity: .4;
 }
 
-#womenPlant{
+#financeSeed:hover {
+  animation: bounceIn;
+  animation-duration: 2s; 
+}
+
+#sustainPlant{
   display: none;
 }
 
-#womenSeed{
+#sustainSeed{
   opacity: .4;
+}
+
+#sustainSeed:hover {
+  animation: bounceIn;
+  animation-duration: 2s; 
 }
 
 #peoplePlant{
@@ -184,9 +223,34 @@ html, body {
   opacity: .4;
 }
 
+#peopleSeed:hover {
+  animation: bounceIn;
+  animation-duration: 2s; 
+}
+
+/* modal content formatting */
 #modal-content{
   display: none;
 
+}
+
+/* start screen formatting */
+#start{
+  display: block;
+}
+
+#begin{
+  display: block;
+  background-color: #80471c;
+  color: white;
+  font-family: Lucida Console;
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  animation: bounceIn;
+  animation-duration: 2s; 
 }
 
 #description{
@@ -198,7 +262,18 @@ html, body {
   font-family: Lucida Console;
 }
 
+#howTo{
+  display:flex;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #80471c;
+  font-family: Lucida Console;
+  text-align: center;
+}
+
 @font-face {
     font-family: "Nature Beauty";
     src: url("NatureBeautyFont.ttf");
 }
+
