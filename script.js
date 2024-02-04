@@ -1,8 +1,6 @@
 var totalLevel = 0;
-var modal = document.getElementByID("theModal");
+var modal = document.getElementById("theModal");
 var span = document.getElementsByClassName("close")[0];
-
-document.getElementById("name").innerHTML = name;
 
 //Fill in Name
 function getName()
@@ -11,15 +9,25 @@ function getName()
   document.getElementById("name").innerHTML = name;
 }
 
-
+/** 
+* general function for what happens when a pot gets clicked
+*/
 function plantClicked(plant){
-  const level = data[0].level;
-  const input = prompt("Question: " + data[0].questions[level].question);
-  const answer = data[0].questions[level].answer;
+  const level = data[plant].level;
+  const input = prompt("Question: " + data[plant].questions[level].question);
+  const answer = data[plant].questions[level].answer;
 
   if(input == answer){
-    data[0].level++;
-    totalLevel++;
+    /**
+    Change the Plant!
+    yes ma'am :0 
+    */
+    console.log(document.getElementById(plant).src);
+    document.getElementById(plant).src = data[plant].images[level+1];
+    console.log(document.getElementById(plant).src);
+    //modalPopUp();
+    data[plant].level++;
+    updateLevel();
   }
 }
 
@@ -29,14 +37,24 @@ window.onclick = function(event) {
   }
 }
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
 function modalPopUp() {
-  modal.style.display = "block";
+  console.log("hiii");
+  modal.style.display = "block"; //ERROR HERE - NULL VALUE FOR STYLE
   prompt("HI");
   prompt("No");
+};
+
+
+function changeSapling()
+{
+  // prompt("Hi");
+  // document.getElementById("img").src = data[];
+  // sapling.src = 'HackVioletSapling.png';
+
 }
 
 function updateLevel()
