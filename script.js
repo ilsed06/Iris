@@ -2,7 +2,9 @@ var lives = 3;
 var totalLevel = 0;
 var span = document.getElementsByClassName("close")[0];
 
-//Fill in Name
+/** 
+* function to fill in name
+*/
 function getName()
 {
   var name = prompt("What is your name?");
@@ -11,11 +13,10 @@ function getName()
 
 /** 
 * general function for what happens when a pot gets clicked
+@param plant - the plant that was clicked
 */
 function plantClicked(plant){
   const level = data[plant].level;
-  //I'll find questions for the trivia bit sounds good
-// can i delete modal stuff? Yeah
   
   //check that the plant is not fully bloomed && check level requirement
   if((level < 3) && (level > 0) && (lives > 0)){ 
@@ -30,7 +31,8 @@ function plantClicked(plant){
 
       //share info
       alert(data[plant].questions[level].info);
-      
+
+      //level up
       data[plant].level++;
       updateLevel(data[plant].level);
 
@@ -44,7 +46,7 @@ function plantClicked(plant){
   }
   //congrats popup if in full bloom
   if (level == 3){
-    alert("Congrats! Your" + data[plant].type +" plant is in full bloom! :)");
+    alert("Congrats! Your " + data[plant].type +" plant is in full bloom! :)");
     data[plant].level++;
     }
   else if (level > 3)
@@ -62,7 +64,7 @@ function plantClicked(plant){
         document.getElementById('sectionTitle').innerHTML = "Seeds";
         document.getElementById('modal-content').style.display = "none";
         document.getElementById('seed-container').style.display = "grid";
-  }
+      }
   }
 }
 
@@ -72,10 +74,12 @@ function plantClicked(plant){
 function removeLife()
 {
   lives--;
+  //two lives left
   if (lives == 2)
   {
     document.getElementById('heart').src = "images/HackVioletHeartTwo.png";
   }
+    //one life left
   else if (lives == 1)
   {
     document.getElementById('heart').src = "images/HackVioletHeartOne.png";
@@ -90,7 +94,9 @@ function removeLife()
 }
 
 /** 
-Makes pot appear
+*Makes pot appear
+*@param seed - the seed that was clicked
+*@param plant - needed for the type of the plant
 */
 function codeClicked(seed, plant){
 
@@ -126,12 +132,14 @@ function codeClicked(seed, plant){
         }
       }
   }
+  //if the plant type is not unlocked
   else if (lives > 0)
   {
     alert("Unlock Level is " + data[seed].unlockLevel);
   }
   else
   {
+    //if the user tries to play after game over
     alert("Please refresh the page to try again.");
   }
   
@@ -145,4 +153,17 @@ function updateLevel(level)
   totalLevel+= level;
   document.getElementById("level").innerHTML = "Level: " + totalLevel;
   
+}
+
+/**
+*welcome screen
+*/
+function welcome()
+{
+  if (totalLevel == 0)
+  {
+      document.getElementById('sectionTitle').innerHTML = "Seeds";
+      document.getElementById('seed-container').style.display = "grid";
+      document.getElementById('start').style.display = "none";
+  }
 }
