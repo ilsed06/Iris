@@ -44,13 +44,14 @@ const data =
            {
              // https://mhanational.org/mental-health-treatments
              "question":"How do people deal with mental health? A: Medication B: Therapy C: Hobbies D: All of the Above",
-             "answer":"C",
+             "answer":"D",
              "info": "People often don't know which treatements to get or what to start with and they need to research. People dealt with mental health in different ways and its important to "
            },
            {
              // https://mhanational.org/mentalhealthfacts
              "question":"About 42.5 Million Americans Have:",
-             "answer":"anxiety"
+             "answer":"anxiety",
+             "info": "There are multiple other common mental illness that others also have! You are not alone"
            }
         ],
         "images":["HackVioletPot.png", "HackVioletSapling.png", "HackVioletPinkFlowers.png"]
