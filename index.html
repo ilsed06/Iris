@@ -1,24 +1,13 @@
-
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Iris</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <script src="data.js"></script>
-  <script src="script.js"></script>
-
-  <section class="content">
-    
+<section class="content">
+    <!-- Seed Menu -->
     <div id="seedMenu">
-      <h4 id="sectionTitle">Seeds</h4>
+      <h4 id="sectionTitle">Welcome to Iris!</h4>
       <div id="modal-content">
         <p id="description"></p>
+      </div>
+      <div id="start">
+        <p id="howTo">Start by clicking a seed and answering a question about various catagories about STEM! Grow your plant by clicking on your plant, answering questions, and watch your plant grow!</p>
+      <button id="begin" onclick="welcome()"> Click Here to Start</button>
       </div>
       <div id="seed-container">
         <!--Empty Slots for Future Developement  -->
@@ -32,7 +21,7 @@
           <img src = "images/HackVioletYellowSeeds.webp" class="pots" onclick ="codeClicked('peoplePlant', 'peopleSeed')" id = "peopleSeed"></img>
         </div>
         <div class="seed-item"> 
-          <img src = "images/HackVioletPinkSeeds.webp" class="pots" onclick ="codeClicked('womenPlant','womenSeed')" id = "womenSeed"></img>
+          <img src = "images/HackVioletPinkSeeds.webp" class="pots" onclick ="codeClicked('sustainPlant','sustainSeed')" id = "sustainSeed"></img>
         </div>
         <div class="seed-item"> 
           <img src = "images/HackVioletOrangeSeeds.png" class="pots" onclick ="codeClicked('financePlant', 'financeSeed')" id = "financeSeed"></img>
@@ -49,7 +38,7 @@
         <div class="seed-item"> </div>
       </div>
     </div>
-
+    <!-- Shelves with plant pots -->
     <div class="grid-container">
       <!--Empty Slots for Future Developement  -->
       <div class="grid-item" onclick="plantClicked('codePlant')">
@@ -69,8 +58,8 @@
       <div class="grid-item"> </div>
       <div class="grid-item"> </div>
       <div class="grid-item"> </div>
-      <div class="grid-item" onclick="plantClicked('womenPlant')"> 
-        <img src = "images/HackVioletPot.png" class="pots" id = "womenPlant"></img>
+      <div class="grid-item" onclick="plantClicked('sustainPlant')"> 
+        <img src = "images/HackVioletPot.png" class="pots" id = "sustainPlant"></img>
       </div>
       <div class="grid-item"> </div>
       <div class="grid-item"> </div>
@@ -84,7 +73,7 @@
     </div>
 
   </section>
-
+  <!-- buttons at the bottom of the screen -->
   <section class="profile">
     <div class="grid-profile">
       <div class="pgrid-item"> 
@@ -103,7 +92,6 @@
       
     </div>
   </section>
-
 </body>
 
 </html>
