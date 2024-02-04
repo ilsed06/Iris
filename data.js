@@ -36,15 +36,16 @@ const data =
        "info": "Here are some resources to help you with your mental health! General Link: https://www.nimh.nih.gov/health/find-help, Cook-Counseling: https://ucc.vt.edu/, Virginia Tech Resources: https://medicine.vtc.vt.edu/student-life/student-wellness/mental-health-resources.html",
         "questions":[
            {
-             // https://www.samhsa.gov/mental-health/myths-and-facts
               "question":"One in _ Americans experience Mental Health in a Year. A:10 B: 5 C: 20 D: 8",
               "answer":"B",
-             "info": "There are more americans that experience mental health in a year since people don't think that they have one and don't realize that they do!",
+             "info": "There are more americans that experience mental health in a year since people don't think that they have one and don't realize that they do. All of people go by with untreated mental health issues so it is important to advocate the different types and let people understand that they can get help with it",
+             "link": "https://www.samhsa.gov/mental-health/myths-and-facts"
            },
            {
              // https://mhanational.org/mental-health-treatments
-             "question":"How do people often get treatment? A: Medication B: Therapy C: Both",
-             "answer":"C"
+             "question":"How do people deal with mental health? A: Medication B: Therapy C: Hobbies D: All of the Above",
+             "answer":"C",
+             "info": "People often don't know which treatements to get or what to start with and they need to research. People dealt with mental health in different ways and its important to "
            },
            {
              // https://mhanational.org/mentalhealthfacts
@@ -81,12 +82,13 @@ const data =
            }
         ],
         "images":["HackVioletPot.png", "HackVioletSapling.png", "HackVioletCactus.png"]
+     },
     "sustainPlant":{
         "type":"Yellow Tulip",
       "title": "Sustainability",
         "level":0,
         "unlockLevel": 9,
-      "info": "Want to learn more about sustainability? Check out these links: ",
+      "info": "Want to learn more about sustainability? Check out these links: Zero Waste Homes: https://zerowastehome.com/, Green Life Homes: https://inhabitat.com/",
         "questions":[
            {
              //https://sustainability.georgetown.edu/50-facts-for-50-years/
@@ -116,22 +118,25 @@ const data =
           "title": "Coding",
          "level":0,
          "unlockLevel":0,
-       "info": "Want to learn about getting finanical help, start with the stocks and more? Check this links!: Zero Waste Homes: https://zerowastehome.com/, Green Life Homes: https://inhabitat.com/",
+       "info": "Want to learn about getting finanical help, start with the stocks and more? Check these links!:" ,
          "questions":[
             {
               //https://educationdata.org/financial-aid-statistics
                "question":"About what percentage of undergraduates get a loan?",
-               "answer":"37"
+               "answer":"37",
+              "info":"While a majority of students are helped through financial aid, there are still many public programs that are underutilizied. In one academic year, almost more than 2 billion funds go unclaimed. People often don't know about these programs and don't know how to access them. Introducing theses programs more publically will help others with their education."
             },
             {
-              // https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8806009/
-               "question":"1 out of 5 people say that they could not afford: ",
-               "answer":"rent"
+              //https://www.bankrate.com/banking/savings/emergency-savings-report/
+                "question":"22% of Americans lack a _ fund?",
+                "answer":"emergency",
+               "info": "While some people have the luxary of having enough money to have a emergency fund, some people can not afford to or don't know that they should so when any problems occur, they are left in financial problems. Educating others about the importance these funds will help others become more financially stable!"
             },
            {
-             //https://www.bankrate.com/banking/savings/emergency-savings-report/
-              "question":"22% of Americans lack a _ fund?",
-              "answer":"emergency"
+             // https://www.womenshistory.org/education-resources/biographies/maggie-lena-walker
+              "question":"Who was the first women to own a bank in the United States?: ",
+              "answer":"Maggie Lena Walker",
+             "info": "Maggie Lena Walker was one of the first female business leaders in the United States. She became the first woman to own a bank in the United States and Walker’s entrepreneurial skills transformed black business practices while also inspiring other women to enter business."
            }
          ],
          "images":["HackVioletPot.png", "HackVioletSapling.png", "HackVioletOrange.png"]
