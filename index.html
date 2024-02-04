@@ -29,10 +29,18 @@
         <div class="seed-item">
           
         </div>
-        <div class="seed-item"> </div>
-        <div class="seed-item"> </div>
-        <div class="seed-item"> </div>
-        <div class="seed-item"> </div>
+        <div class="seed-item"> 
+          <img src = "HackVioletPot.png" class="pots"></img>
+        </div>
+        <div class="seed-item"> 
+          <img src = "HackVioletPot.png" class="pots"></img>
+        </div>
+        <div class="seed-item"> 
+          <img src = "HackVioletPot.png" class="pots"></img>
+        </div>
+        <div class="seed-item"> 
+          <img src = "HackVioletPot.png" class="pots"></img>
+        </div>
         <div class="seed-item"> </div>
         <div class="seed-item"> </div>
         <div class="seed-item"> </div>
@@ -48,17 +56,21 @@
 
     <div class="grid-container">
       <!--Empty Slots for Future Developement  -->
-      <div class="grid-item" onclick="plantClicked()">
-        <img src = "HackVioletUglyPot.jpg" id="pots"></img>
+      <div class="grid-item" onclick="plantClicked('codePlant')">
+        <img src = "HackVioletPot.png" class="pots" id = "codePlant"></img>
       </div>
       <div class="grid-item"> </div>
-      <div class="grid-item" onclick="healthPlant()"> </div>
+      <div class="grid-item" onclick="plantClicked('healthPlant')"> 
+        <img src = "HackVioletPot.png" class="pots" id = "healthPlant"></img>
+      </div>
       <div class="grid-item"> </div>
       <div class="grid-item"> </div>
       <div class="grid-item"> </div>
       <div class="grid-item"> </div>
       <div class="grid-item"> </div>
-      <div class="grid-item"> </div>
+      <div class="grid-item" onclick="plantClicked('peoplePlant')"> 
+        <img src = "HackVioletPot.png" class="pots" id = "peoplePlant"></img>
+      </div>
       <div class="grid-item"> </div>
       <div class="grid-item"> </div>
       <div class="grid-item"> </div>
@@ -75,7 +87,9 @@
 
   <section class="profile">
     <div class="grid-profile">
-      <div class="pgrid-item"> </div>
+      <div class="pgrid-item"> 
+        <img src = "HackVioletManPot.webp" id="logo"></img>
+      </div>
       <div class="pgrid-item" onclick="getName()">
         <p id="name">Add Name</p>
       </div>
