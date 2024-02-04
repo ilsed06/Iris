@@ -81,7 +81,6 @@ const data =
            }
         ],
         "images":["HackVioletPot.png", "HackVioletSapling.png", "HackVioletCactus.png"]
-     },
     "sustainPlant":{
         "type":"Yellow Tulip",
       "title": "Sustainability",
