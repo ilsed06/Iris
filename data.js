@@ -5,7 +5,7 @@ const data =
         "title": "Coding",
         "level":0,
         "unlockLevel": 0,
-       "info": "Want to learn more about coding? Check these links!",
+       "info": "Want to learn more about coding? Check these links!     Python: https://www.python.org/about/gettingstarted/,             Web-Development: https://bootcamp.berkeley.edu/resources/coding/learn-web-development,       HTML/CSS: https://www.codecademy.com/catalog/language/html-css",
         "questions":[
            {
              "question":"Who is considered to be the first computer programmer? (full name)",
@@ -33,12 +33,13 @@ const data =
        "title": "Mental Health",
         "level":0,
         "unlockLevel": 3,
-       "info": "Here are some resources to help you with your mental health!",
+       "info": "Here are some resources to help you with your mental health! General Link: https://www.nimh.nih.gov/health/find-help, Cook-Counseling: https://ucc.vt.edu/, Virginia Tech Resources: https://medicine.vtc.vt.edu/student-life/student-wellness/mental-health-resources.html",
         "questions":[
            {
              // https://www.samhsa.gov/mental-health/myths-and-facts
               "question":"One in _ Americans experience Mental Health in a Year. A:10 B: 5 C: 20 D: 8",
-              "answer":"B"
+              "answer":"B",
+             "info": "There are more americans that experience mental health in a year since people don't think that they have one and don't realize that they do!",
            },
            {
              // https://mhanational.org/mental-health-treatments
@@ -57,7 +58,8 @@ const data =
         "type":"Cactus",
        "title": "Famous Women",
         "level":0,
-        "unlockLevel":6,
+       "unlockLevel":6,
+       "info":"Want to learn more about women impowerment? Check out these links",
         "questions":[
            {
               "question":"Who was the women genius in Science that worked on Radioactivity and X-Rays? (first and last name)",
@@ -79,23 +81,32 @@ const data =
            }
         ],
         "images":["HackVioletPot.png", "HackVioletSapling.png", "HackVioletCactus.png"]
-     },
-    "womenPlant":{
+    "sustainPlant":{
         "type":"Yellow Tulip",
+      "title": "Sustainability",
         "level":0,
         "unlockLevel": 9,
+      "info": "Want to learn more about sustainability? Check out these links: ",
         "questions":[
            {
-              "question":"1?",
-              "answer":"1"
+             //https://sustainability.georgetown.edu/50-facts-for-50-years/
+              "question":"The United States is the 1st _ producing country in the world",
+              "answer":"trash"
            },
            {
-              "question":"2?",
-              "answer":"2"
+             //https://sustainability.georgetown.edu/50-facts-for-50-years/
+              "question":"Recycling one aluminmum can save enough enegery to run a TV for _ hours?",
+              "answer":"3",
+             
+                  //https://climate.nasa.gov/evidence/#:~:text=Global%20Temperature%20Is%20Rising,atmosphere%20and%20other%20human%20activities.
+             "question":"The planet's average temperature has gone up at least _ degrees in the last few years!",
+             "answer":"2"
+             
            },
            {
-              "question":"3?",
-              "answer":"3"
+             //https://www.sustainability.gov/#:~:text=The%20Office%20of%20the%20Federal,and%20climate%20resilient%20Federal%20operations.
+              "question":"What is the name of the position that in charge of policy on sustainability in the US Government?",
+              "answer":"Chief Sustainability Officer"
            }
         ],
         "images":["HackVioletPot.png", "HackVioletSapling.png", "HackVioletYellowFlower.png"]
@@ -105,11 +116,12 @@ const data =
           "title": "Coding",
          "level":0,
          "unlockLevel":0,
-       "info": "Want to learn about getting finanical help, start with the stocking",
+       "info": "Want to learn about getting finanical help, start with the stocks and more? Check this links!: Zero Waste Homes: https://zerowastehome.com/, Green Life Homes: https://inhabitat.com/",
          "questions":[
             {
-               "question":"1?",
-               "answer":"1"
+              //https://educationdata.org/financial-aid-statistics
+               "question":"About what percentage of undergraduates get a loan?",
+               "answer":"37"
             },
             {
               // https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8806009/
@@ -117,8 +129,9 @@ const data =
                "answer":"rent"
             },
            {
-              "question":"3?",
-              "answer":"3"
+             //https://www.bankrate.com/banking/savings/emergency-savings-report/
+              "question":"22% of Americans lack a _ fund?",
+              "answer":"emergency"
            }
          ],
          "images":["HackVioletPot.png", "HackVioletSapling.png", "HackVioletOrange.png"]
